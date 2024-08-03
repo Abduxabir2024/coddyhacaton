@@ -2,9 +2,9 @@
 
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import en from './components/languages/en.json'
-import ru from './components/languages/ru.json'
-import uz from './components/languages/uz.json'
+import en from './page/languages/en.json'
+import ru from './page/languages/ru.json'
+import uz from './page/languages/uz.json'
 // Sample translation resources
 const resources = {
     en: {

@@ -1,6 +1,7 @@
 import React from 'react';
 import och from "../../../public/ochki.jpg"
 import { Flex, Input, Select, Space, Button } from 'antd';
+import { useTranslation } from 'react-i18next';
 const { Option } = Select;
 const handleChange = (value) => {
     console.log(`selected ${value}`);
@@ -49,9 +50,10 @@ const onChange = (e) => {
 
 
 export default function ContactUser() {
+    const { t } = useTranslation();
 
     return <div className='border border-[black] m-[100px] rounded-[15px] dark:'>
-        <p className='text-4xl pt-[50px] pl-[50px] md:pl-[250px] lg:pl-[300px] xl:pl-[450px] sm:pl-[10px] hover:text-[blue]'>Register Users</p>
+        <p className='text-4xl pt-[50px] pl-[50px] md:pl-[250px] lg:pl-[300px] xl:pl-[450px] sm:pl-[10px] hover:text-[blue]'>{t("reg")}</p>
         <div className='xl:flex justify-between px-[30px] py-[10px]'>
             <div>
                 <div>
@@ -143,7 +145,7 @@ export default function ContactUser() {
         </div>
         <div className='pl-[100px] pb-[50px] pt-[10px] sm:pl-[190px] md:pl-[320px] lg:pl-[350px] xl:pl-[770px] xl:pt-[0]'>
             <Flex gap="small" wrap>
-                <Button>Send</Button>
+                <Button>{t("Send")}</Button>
             </Flex>
         </div>
     </div>

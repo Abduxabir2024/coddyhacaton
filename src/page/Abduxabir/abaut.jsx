@@ -1,9 +1,11 @@
 import "./abaut.scss"
 import { useState } from "react";
 import { Input } from 'antd';
+import { useTranslation } from "react-i18next";
 
 
 export default function Abaut(){
+    const { t } = useTranslation();
     let [name, setName] = useState("")
     let [massage, setMassage] = useState("")
     let [tel, setTel] = useState("")
@@ -22,13 +24,13 @@ export default function Abaut(){
     return(
         <>
            <div className="bi">
-            <h1>Bizning jamoa azolari</h1>
+            <h1>{t("team")}</h1>
         </div>
         <div className="katta">
                 <div className="main">
                     <div id="c2" className="card">
                         <div className="card-info">
-                            <div className="contact-title">Contact</div>
+                            <div className="contact-title">{t("Contact")}</div>
                             <div className="card-contact">
                                 <li className="icon-contact">
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +87,7 @@ export default function Abaut(){
                 <div className="main">
                     <div id="c2" className="card">
                         <div className="card-info">
-                            <div className="contact-title">Contact</div>
+                            <div className="contact-title">{t("Contact")}</div>
                             <div className="card-contact">
                                 <li className="icon-contact">
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +145,7 @@ export default function Abaut(){
                 <div className="main">
                     <div id="c2" className="card">
                         <div className="card-info">
-                            <div className="contact-title">Contact</div>
+                            <div className="contact-title">{t("Contact")}</div>
                             <div className="card-contact">
                                 <li className="icon-contact">
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +203,7 @@ export default function Abaut(){
                 <div className="main">
                     <div id="c2" className="card">
                         <div className="card-info">
-                            <div className="contact-title">Contact</div>
+                            <div className="contact-title">{t("Contact")}</div>
                             <div className="card-contact">
                                 <li className="icon-contact">
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +261,7 @@ export default function Abaut(){
                 <div className="main">
                     <div id="c2" className="card">
                         <div className="card-info">
-                            <div className="contact-title">Contact</div>
+                            <div className="contact-title">{t("Contact")}</div>
                             <div className="card-contact">
                                 <li className="icon-contact">
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -317,7 +319,7 @@ export default function Abaut(){
                 <div className="main">
                     <div id="c2" className="card">
                         <div className="card-info">
-                            <div className="contact-title">Contact</div>
+                            <div className="contact-title">{t("Contact")}</div>
                             <div className="card-contact">
                                 <li className="icon-contact">
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -375,54 +377,54 @@ export default function Abaut(){
                 </div>
             </div>
             <div className="bi">
-            <h1>Qilgan praektlarimiz </h1>
+            <h1>{t("praekt")} </h1>
              </div>
             <div className="kat">
                 <div className="card2">
                     <img src="./t.png" alt="" />
                     <a href="https://tailwindtemplates.co/">
-                        <button>Bosing</button>
+                        <button>{t("bos")}</button>
                     </a>
                 </div>
                 <div className="card2">
                     <img src="./e.png" alt="" />
                     <a href="https://tailkit.com/">
-                        <button>Bosing</button>
+                        <button>{t("bos")}</button>
                     </a>
                 </div>
                 <div className="card2">
                     <img src="./w.png" alt="" />
                     <a href="https://www.tranexteint.ec/?c=premium-landing-page-pack-for-tailwind-css-jj-A6z0lWSN">
-                        <button>Bosing</button>
+                        <button>{t("bos")}</button>
                     </a>
                 </div>
                 <div className="card2">
                     <img src="./r.png" alt="" />
                     <a href="https://tailwindfromscratch.com/website-projects/loopstudios/">
-                        <button>Bosing</button>
+                        <button>{t("bos")}</button>
                     </a>
                 </div>
                 <div className="card2">
                     <img src="./y.png" alt="" />
                     <a href="https://tailwindfromscratch.com/website-projects/bookmark/">
-                        <button>Bosing</button>
+                        <button>{t("bos")}</button>
                     </a>
                 </div>
                 <div className="card2">
                     <img src="./op.png" alt="" />
                     <a href="https://www.shopify.com/">
-                        <button>Bosing</button>
+                        <button>{t("bos")}</button>
                     </a>
                 </div>
             </div>
             <div className="kattaa">
             <form onSubmit={(e) => createProd(e)}>
             <div className="in">
-            <h1>Cantak</h1>
+            <h1>{t("Contact")}</h1>
                 <input value={name} onChange={(e) => setName(e. target.value)} className='l' type="text" placeholder='FullName'/>
                 <input value={tel} onChange={(e) => setTel(e. target.value)} className='l' type="text" placeholder='Tel'/>
                 <TextArea value={massage} onChange={(e) => setMassage(e. target.value)}  rows={4} placeholder='Massage' />
-               <button>Add</button>
+               <button>{t("Send")}</button>
             </div>
             </form>
             <div className="text">
