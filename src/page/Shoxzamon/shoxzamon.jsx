@@ -4,7 +4,6 @@ import "./shoxzamon.scss"
 import { Button } from "@material-tailwind/react"
 import { Input } from "antd"
 import React from 'react';
-import { Select, Space } from 'antd';
 const handleChange = (value) => {
     console.log(`selected ${value}`);
 };

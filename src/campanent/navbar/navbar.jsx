@@ -17,8 +17,8 @@ export default function Navbar() {
         </div>
         <div className="ul flex items-center gap-10">
           <Link className="hover:text-blue-800 hover:font-bold" to={"/home"}>{t("home")}</Link>
-          <Link className="hover:text-blue-800 hover:font-bold" to={"/RegisteUser"}>{t("reg")}</Link>
           <Link className="hover:text-blue-800 hover:font-bold" to={"/About"}>{t("about")}</Link>
+          <Link className="hover:text-blue-800 hover:font-bold" to={"/RegisteUser"}>{t("reg")}</Link>
           <Link className="hover:text-blue-800 hover:font-bold" to={"/Login"}>{t("Log In")}</Link>
         </div>
         <div className="flex gap-[30px]">
