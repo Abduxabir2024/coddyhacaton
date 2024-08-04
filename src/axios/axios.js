@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const url = axios.create({
-  baseURL: "https://crudcrud.com/api/2144d5fd47a74012ace9e2bb7fad072c",
+  baseURL: "https://crudcrud.com/api/3cae43c600eb41e0af0240d8ce2a7424",
 });
