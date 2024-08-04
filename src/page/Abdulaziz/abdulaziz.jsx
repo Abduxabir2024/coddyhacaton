@@ -14,7 +14,7 @@ export default function Homeg() {
         <>
             <div className='flex px-[70px] '>
                 <div className='w-[60%]'>
-                    <p className='text-[55px] w-[80%]'>Universitet va Oquv markaz muammolarini hal qilish.</p>
+                    <p className='text-[55px] w-[80%]'>IT yonalishidagi odamlarni ish bilan taminlash</p>
                     <p className='text-[20px] pt-[30px] w-[95%]'>Juda ko'p dasturchilar hozirgi kunda  Universitet va O'quv markazlarini qidirishga qiynaladi. Biz bu mamoni ko'rib chiqdik va odamlarga qulay bo'lishi uchun WEBSITE ishlab chiqdik.</p>
                     <div className="flex w-max gap-4 pt-[20px] ">
                         <Button color="blue"><a href="http://localhost:5174/RegisteUser">Registratsiya</a></Button>
