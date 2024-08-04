@@ -9,10 +9,10 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex items-center justify-between mx-20">
+      <div className="flex items-center justify-between mx-14">
 
         <div className="logo flex items-center ">
-          <img src="https://img.freepik.com/premium-vector/gw-logo_745848-61.jpg" alt="" className="w-28" />
+          <img src="https://img.freepik.com/premium-vector/gw-logo_745848-61.jpg" alt="" className="w-20" />
           <h1>GRIDWORK</h1>
         </div>
         <div className="ul flex items-center gap-10">
@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
         <div className="flex gap-[30px]">
           <LanguageSwitcher />
-          <Button>{t("Log In")}</Button>
+          <Button><Link to={"Login"}>{t("Log In")}</Link></Button>
         </div>
       </div>
     </>
