@@ -3,7 +3,7 @@ import Abaut from "./page/Abduxabir/abaut";
 import Homeg from "./page/Abdulaziz/abdulaziz"
 import Navbar from "./campanent/navbar/navbar";
 import Login from "./page/Shoxzamon/shoxzamon";
-import Footerr from "./campanent/footer/footer";
+import { Footer } from "./campanent/footer/footer";
 import ContactUser from "./page/jashid/jamshid";
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
       <Route path="/RegisteUser"  element={<ContactUser/>} />
       <Route path="/Login" element={<Login/>} />
     </Routes>
-    <Footerr />
+    <Footer />
     </>
   )
 }
